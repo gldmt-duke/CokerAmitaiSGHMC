@@ -4,7 +4,13 @@ Stochastic Gradient Hamiltonian Monte Carlo proposes using a subset $\tilde{\mat
 \end{equation*}
 which can then be used in the Hamiltonian Monte Carlo equations in the stead of the gradient $\Delta U(\theta)$.
 
+Logistic regression assigns the probability of success to a dichotoumous response variable
+
 \begin{equation*}
 	\prob{y_i=1|\bm{x}_{i},\bm{\beta}}=\frac{\exp\braces{\bm{x}_i^T\bm{\beta}}}{1+\exp\braces{\bm{x}_i^T\bm{\beta}}}
 \end{equation*}
 
+where $\bm{x}_i$ is a vector of length $p$ covariates for data point $i$ and $\bm{\beta}$ is a vector of regression coefficients of length $p$. In a Bayesian framework, we would assign the a prior distribution on our unknown parameters $P(\bm{\beta})\sim\mathcal{N}(0, \sigma^2)$ where, for the purposes of our project, $\sigma^2$ is known. The corresponding posterior will be proportional to $P(\theta)\prod_{i=1}^n\prob{y_i|\bm{x}_i,\bm{\beta}}$, which would give us the potential energy function
+\begin{equation*}
+U(\bm{\beta})=-\log\left[P(\bm{\beta})\right] - \sum_{i=1}^n\log\left[\prob{y_i|\bm{x}_i,\bm{\beta}}\right]=\sum_{j=1}^p\frac{\beta_j^2}{2\sigma^2}-\sum_{i=1}^n\left[y_i(\bm{x}_i^T\bm{\beta}-\log(1+\exp\braces{\bm{x}_i^T\bm{\beta}})\right].
+\end{equation*}
