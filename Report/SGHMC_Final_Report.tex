@@ -16,11 +16,32 @@
 %\thispagestyle{empty}
 \vspace{-0.5in}
 
-Test image:
-\begin{figure}
-  \includegraphics[width=\linewidth]{../Test1/Test1_fig.png}
-  \caption{Caption text}
-  \label{fig:fig1}
-\end{figure}
+\begin{abstract}
+	Hamiltonian Monte Carlo (HMC) is a Markov chain Monte Carlo algorithm for drawing samples from a probability distribution where proposed values are computed using Hamiltonian dynamics to find values of high acceptance probabilities. They allow us to explore sample states more efficiently than random walk proposals, but are limited by the expensive computation of the gradient of the total energy function. Chen, Fox, and Guestrin propose the method Stochastic Gradient Hamiltonian Monte Carlo (SGHMC), a HMC algorithm that uses a subset of the data to compute the gradient. The authors find that the stochastic gradient is noisy and correct this with a friction term.
+
+	In this project, we adapt the SGHMC to be used for Bayesian Logistic regression, implement this method in Python, optimize the code for computational efficiency, validate our approach using simulated data, and apply the algorithm to real world classification problems.
+\end{abstract}
+
+\section{Background}
+\input{background.tex}
+
+\section{Description of Algorithm}
+\input{description.tex}
+
+\section{Optimization}
+\input{optimization.tex}
+
+\section{Application to Simulated Data}
+\input{simulated.tex}
+
+\section{Application to Real Data}
+\input{real.tex}
+
+\section{Comparative Analysis}
+\input{comparative.tex}
+
+\section{Discussion and Conclusion}
+\input{discussion.tex}
+
 
 \end{document}
