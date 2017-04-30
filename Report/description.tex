@@ -1,1 +1,5 @@
-blah blah blah
+Stochastic Gradient Hamiltonian Monte Carlo proposes using a subset $\tilde{\mathcal{D}}$ of the entire dataset $\mathcal{D}$ to compute the stochastic gradient
+\begin{equation*}
+	\Delta\tilde{U}=-\frac{|\mathcal{D}|}{|\tilde{\mathcal{D}}|}\sum_{x\in\tilde{\mathcal{D}}}\Delta\log p(x|\theta) - \Delta\log p(\theta)
+\end{equation*}
+which can then be used in the Hamiltonian Monte Carlo equations in the stead of the gradient $\delta U(\theta)$.
