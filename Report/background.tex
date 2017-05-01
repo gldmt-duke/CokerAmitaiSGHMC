@@ -5,3 +5,20 @@ Because this is a project about Hamiltonian Monte Carlo, imagine a frictionless 
 	\
 	\end{split}
 \end{equation*}
+
+\begin{algorithm}[H]
+	\KwIn{Starting position $\theta^{(1)}$ and step size $\epsilon$.}
+	\For{t=1, 2, \dots} {
+		Sample momentum $r^{(1)}\sim\mathcal{N}(0, M)$\\
+		$r_0=r_0+\frac{\epsilon}{2}\Delta U(\theta_0)$\\
+		\For{i=1,\dots,m} {
+			$\theta_i=\theta_{i-1}+\epsilon M^{-1}r_{i-1}$\\
+			$r_i = r_{i-1} - \epsilon  \Delta U(\theta_i)$\\
+		}
+		$r_m = r_m -\frac{\epsilon}{2}\Delta U(\theta_m)$\\
+		$(\hat{\theta}, \hat{r})=(\theta_m,r_m)$\\
+		Sample $u\sim\mathrm{Uniform}[0, 1]$\\
+		$\rho = \exp\braces{H(\hat{\theta}, \hat{r})-H(\theta^{(t)}, r^{(t)})}$\\
+		\If{$u < \min(1, \rho)$}{$\theta^{(t+1)} = \hat{\theta}$}
+	}
+\end{algorithm}
