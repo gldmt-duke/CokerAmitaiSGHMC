@@ -1,8 +1,8 @@
-To test our implementation of the algorithm, we simulated data with 50 covariates and 500 observations, where the covariates were sampled from a normal distribution with mean zero and variances 25, 5, and 0.4 sampled form a multinomial distribution with probability vector $(.05, .05, .9)$.\\
+To test our implementation of the algorithm, we simulated data with 50 covariates and 500 observations, where the covariates were sampled from a normal distribution with mean zero and variances 25, 5, and 0.4 sampled form a multinomial distribution with probability vector $(.05, .05, .9)$. Data was normalized to have mean zero and a standard deviation of one. No intercept was fit.\\
 
 We can see that using the Hamiltonian Monte Carlo algorithm produced good mixing with energy decreasing downwards and converging:
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\begin{minipage}{0.45\textwidth}
 		\centering
@@ -18,7 +18,7 @@ We can see that using the Hamiltonian Monte Carlo algorithm produced good mixing
 
 We can see that using the Stochastic Gradient Hamiltonian Monte Carlo algorithm produced good mixing with energy decreasing downwards and converging:
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\begin{minipage}{0.45\textwidth}
 		\centering
@@ -34,7 +34,7 @@ We can see that using the Stochastic Gradient Hamiltonian Monte Carlo algorithm 
 
 We compared the coefficients produced by each algorithm to the MLE estimates to check for accuracy:
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 		\includegraphics[width=0.45\textwidth]{hmc-energy-pima.pdf}
 \end{figure}

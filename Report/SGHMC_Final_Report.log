@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.30)  1 MAY 2017 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.30)  1 MAY 2017 13:42
 entering extended mode
 **./SGHMC_Final_Report.tex
 (SGHMC_Final_Report.tex
@@ -211,21 +211,29 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count106
 \algocf@algoframe=\box34
 \algocf@algobox=\box35
-) (SGHMC_Final_Report.aux)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count107
+\float@exts=\toks21
+\float@box=\box36
+\@float@everytoks=\toks22
+\@floatcapt=\box37
+)
+(SGHMC_Final_Report.aux)
 \openout1 = `SGHMC_Final_Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -263,17 +271,17 @@ LaTeX Font Info:    ... okay on input line 17.
 
 (C:\Users\ga74\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
+\scratchcounter=\count108
 \scratchdimen=\dimen128
-\scratchbox=\box36
-\nofMPsegments=\count108
-\nofMParguments=\count109
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count110
+\scratchbox=\box38
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count111
 \MPscratchDim=\dimen129
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks22
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks24
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -316,12 +324,12 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -330,19 +338,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-<posterior_samples.pdf, id=1, 722.7pt x 578.16pt> [1
-
-{C:/Users/ga74/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<posterior_samples.pdf, id=1, 722.7pt x 578.16pt>
 File: posterior_samples.pdf Graphic file (type pdf)
  <use posterior_samples.pdf>
-Package pdftex.def Info: posterior_samples.pdf used on input line 25.
-(pdftex.def)             Requested size: 522.1545pt x 417.72168pt.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 25--37
+Package pdftex.def Info: posterior_samples.pdf used on input line 27.
+(pdftex.def)             Requested size: 469.93585pt x 375.94952pt.
 
- []
+[1
 
-[2 <./posterior_samples.pdf>] (description.tex) (optimization.tex)
+{C:/Users/ga74/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+(description.tex [2 <./posterior_samples.pdf>]) (optimization.tex)
 (simulated.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
@@ -371,23 +376,17 @@ File: hmc-energy-pima.pdf Graphic file (type pdf)
  <use hmc-energy-pima.pdf>
 Package pdftex.def Info: hmc-energy-pima.pdf used on input line 39.
 (pdftex.def)             Requested size: 234.96793pt x 176.22385pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (real.tex
+) [4 <./hmc-energy-pima.pdf>] (real.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-[4 <./hmc-energy-pima.pdf>]
 File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
+<use hmc-energy-pima.pdf>
 Package pdftex.def Info: hmc-energy-pima.pdf used on input line 9.
 (pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
 File: hmc-energy-pima.pdf Graphic file (type pdf)
-
-<use hmc-energy-pima.pdf>
+ <use hmc-energy-pima.pdf>
 Package pdftex.def Info: hmc-energy-pima.pdf used on input line 14.
 (pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
 File: hmc-energy-pima.pdf Graphic file (type pdf)
@@ -395,34 +394,29 @@ File: hmc-energy-pima.pdf Graphic file (type pdf)
 Package pdftex.def Info: hmc-energy-pima.pdf used on input line 25.
 (pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
 File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
+
+<use hmc-energy-pima.pdf>
 Package pdftex.def Info: hmc-energy-pima.pdf used on input line 30.
 (pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+ [5]
 File: hmc-energy-pima.pdf Graphic file (type pdf)
-<use hmc-energy-pima.pdf>
+ <use hmc-energy-pima.pdf>
 Package pdftex.def Info: hmc-energy-pima.pdf used on input line 40.
 (pdftex.def)             Requested size: 234.96793pt x 176.22385pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (comparative.tex) (discussion.tex) [5] [6] (SGHMC_Final_Report.aux) )
+) (discussion.tex)
+[6] (SGHMC_Final_Report.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 3956 strings out of 493334
- 55205 string characters out of 3139231
- 137219 words of memory out of 3000000
- 7400 multiletter control sequences out of 15000+200000
+ 4012 strings out of 493334
+ 55929 string characters out of 3139231
+ 138625 words of memory out of 3000000
+ 7455 multiletter control sequences out of 15000+200000
  18581 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,15n,30p,1059b,1896s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,15n,30p,1059b,1943s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Prog
@@ -436,7 +430,7 @@ nts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on SGHMC_Final_Report.pdf (6 pages, 253618 bytes).
+Output written on SGHMC_Final_Report.pdf (6 pages, 253410 bytes).
 PDF statistics:
  149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
