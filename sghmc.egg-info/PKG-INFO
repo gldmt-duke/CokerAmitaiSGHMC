@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sghmc
+Version: 0.1
+Summary: An implementation of Stochastic Gradient Hamiltonian Monte Carlo by Gilad Amitai and Beau Coker.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,7 @@
+setup.py
+sghmc.egg-info/PKG-INFO
+sghmc.egg-info/SOURCES.txt
+sghmc.egg-info/dependency_links.txt
+sghmc.egg-info/not-zip-safe
+sghmc.egg-info/requires.txt
+sghmc.egg-info/top_level.txt
