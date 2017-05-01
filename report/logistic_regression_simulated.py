@@ -8,33 +8,28 @@ import matplotlib.pyplot as plt
 import sghmc
 
 
-# In[2]:
+# Create data
 
-pima = np.genfromtxt('pima-indians-diabetes.data', delimiter=',')
-names = ["Number of times pregnant",
-         "Plasma glucose concentration",
-         "Diastolic blood pressure (mm Hg)",
-         "Triceps skin fold thickness (mm)",
-         "2-Hour serum insulin (mu U/ml)",
-         "Body mass index (weight in kg/(height in m)^2)",
-         "Diabetes pedigree function",
-         "Age (years)",
-         "Class variable (0 or 1)"]
+n = 500
+p = 50
 
+beta = np.random.normal(0, 1, p+1)
 
-# In[3]:
+Sigma = np.zeros((p, p))
+Sigma_diags = np.array([25, 5, 0.2**2])
+distribution = np.random.multinomial(p, pvals=[.05, .05, .9], size=1).tolist()
+np.fill_diagonal(Sigma, np.repeat(Sigma_diags, distribution[0], axis=0))
 
-# Load data
-X = np.concatenate((np.ones((pima.shape[0],1)),pima[:,0:8]), axis=1)
-Y = pima[:,8]
+X = np.random.multivariate_normal(np.zeros(p), Sigma, n)
+X = np.hstack((np.ones((n, 1)), X))
+p = np.exp(X @ beta)/np.exp(1 + np.exp(X @ beta))
+Y = np.random.binomial(1, p, n)
+
+# Scale data
 
 Xs = (X - np.mean(X, axis=0))/np.concatenate((np.ones(1),np.std(X[:,1:], axis=0)))
 Xs = Xs[:,1:]
-
-n, p = Xs.shape
-
-
-# In[ ]:
+p = Xs.shape[1]
 
 
 
@@ -111,7 +106,7 @@ beta_est_hmc - beta_true_scale
 # In[9]:
 
 plt.plot((samples - beta_true_scale)[:,1])
-plt.savefig('hmc-trace-pima.pdf')
+plt.savefig('hmc-trace-sim.pdf')
 
 
 # In[10]:
@@ -120,7 +115,7 @@ fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(H)
 ax.set_title("Total energy")
 ax.set_xlabel("Number of samples")
-plt.savefig('hmc-energy-pima.pdf')
+plt.savefig('hmc-energy-sim-sim.pdf')
 
 
 # In[11]:
@@ -179,13 +174,13 @@ np.mean(samples, axis=0) - beta_true_scale
 # In[12]:
 
 plt.plot((samples - beta_true_scale)[:,0])
-plt.savefig('sghmc-trace-pima.pdf')
+plt.savefig('sghmc-trace-sim.pdf')
 
 
 # In[13]:
 
 plt.plot(H)
-plt.savefig('sghmc-energy-pima.pdf')
+plt.savefig('sghmc-energy-sim.pdf')
 
 
 # In[28]:
