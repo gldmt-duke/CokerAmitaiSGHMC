@@ -224,6 +224,7 @@ plt.savefig('sghmc-energy-pima.pdf')
 #
 #
 # Gradient descent - Scaled
+import pandas as pd
 np.random.seed(2)
 phi = .1
 

@@ -7,6 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sghmc
 import timeit
+import pandas as pd
 
 # Create data
 
@@ -151,7 +152,7 @@ V = 0 * np.identity(p)
 M = np.identity(p)
 
 samples, H = sghmc.run_sghmc(Y, Xs, sghmc.U_logistic, sghmc.stogradU_logistic, M, eps, m, theta, C, V, phi, nsample, nbatch)
-
+beta_est_sghmc = np.mean(samples, axis=0)
 np.mean(samples, axis=0) - beta_true_scale
 
 
