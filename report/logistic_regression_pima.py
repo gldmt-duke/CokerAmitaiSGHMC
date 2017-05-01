@@ -144,10 +144,6 @@ ax[2].set_title(names[i])
 
 # In[ ]:
 
-fig, ax = plt.subplots()
-
-ax.bar()
-
 
 # In[ ]:
 

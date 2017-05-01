@@ -1,4 +1,4 @@
-SGHMC_Final_Report.pdf: SGHMC_Final_Report.tex posterior_samples pima
+SGHMC_Final_Report.pdf: SGHMC_Final_Report.tex posterior_samples pima simulated
 	pdflatex SGHMC_Final_Report.tex
 
 posterior_samples: 
@@ -6,3 +6,6 @@ posterior_samples:
 
 pima:
 	python logistic_regression_pima.py
+
+simulated:
+	python logistic_regression_simulated.py

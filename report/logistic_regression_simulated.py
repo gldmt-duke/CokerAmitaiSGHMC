@@ -115,33 +115,17 @@ fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(H)
 ax.set_title("Total energy")
 ax.set_xlabel("Number of samples")
-plt.savefig('hmc-energy-sim-sim.pdf')
+plt.savefig('hmc-energy-sim.pdf')
 
 
-# In[11]:
 
-fig, ax = plt.subplots(3,1, figsize=(6,10))
-
-i = 0
-ax[0].plot((samples - beta_true_scale)[:,i])
-ax[0].set_title(names[i])
-
-
-i = 1
-ax[1].plot((samples - beta_true_scale)[:,i])
-ax[1].set_title(names[i])
-
-
-i = 2
-ax[2].plot((samples - beta_true_scale)[:,i])
-ax[2].set_title(names[i])
 
 
 # In[ ]:
 
-fig, ax = plt.subplots()
+#fig, ax = plt.subplots()
 
-ax.bar()
+#ax.bar()
 
 
 # In[ ]:
@@ -183,23 +167,6 @@ plt.plot(H)
 plt.savefig('sghmc-energy-sim.pdf')
 
 
-# In[28]:
-
-fig, ax = plt.subplots(3,1, figsize=(6,10))
-
-i = 0
-ax[0].plot((samples - beta_true_scale)[:,i])
-ax[0].set_title(names[i])
-
-
-i = 1
-ax[1].plot((samples - beta_true_scale)[:,i])
-ax[1].set_title(names[i])
-
-
-i = 2
-ax[2].plot((samples - beta_true_scale)[:,i])
-ax[2].set_title(names[i])
 
 
 # ### Gradient Descent
