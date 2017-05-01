@@ -6,7 +6,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 # In[11]:
 
 # Hamiltonian dynaimcs with noised gradient
