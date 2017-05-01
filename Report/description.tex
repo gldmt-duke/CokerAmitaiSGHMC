@@ -18,7 +18,17 @@ and gradient components
 \begin{equation*}
 \frac{\partial U}{\partial \beta_j}=\frac{\beta_j}{\sigma^2}-\sum_{i=1}^{n}x_{ij}\left[y_i-\frac{\exp\braces{\bm{x}_i^T\bm{\beta}}}{1+\exp\braces{\bm{x}_i^T\bm{\beta}}}\right]. 
 \end{equation*}
-In practice, the stochastic gradient is noisy since it is an approximation of the gradient. The paper suggests introducing a friction term to the momentum to dampen the movement of the chain. The algorithm will take a user specified friction term $C$ that is element-wise bigger than the noise model $B$. The noise model is unknown but can be set to zero for simplicity. The final algorithm will be:
+In practice, the stochastic gradient is noisy since it is an approximation of the gradient. The paper suggests introducing a friction term to the momentum to dampen the movement of the chain. The algorithm will take a user specified friction term $C$ that is element-wise bigger than the noise model $B$. The noise model is unknown but can be set to zero for simplicity. 
+
+To better understand algorithm, we follow the example from the original paper. We consider a true potential energy function $U(\theta)=\frac{1}{2}\theta^2$. We show the samples of the momentum term  $r$ and the parameter of interest  $\theta$ . In the figure, lighter colors indicate samples later in the simulation. The Hamiltonian samples, where energy is conserved, are near the origin. Samples using the noisy Hamiltonian spiral away from the origin. Adding the friction term keeps the posterior samples in a reasonable range.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{posterior_samples.pdf}
+\end{figure}
+
+
+The final algorithm will be:
 
 \begin{algorithm}[H]
 	\KwIn{Starting position $\theta^{(1)}$ and step size $\epsilon$.}
@@ -32,4 +42,4 @@ In practice, the stochastic gradient is noisy since it is an approximation of th
 	}
 \end{algorithm}
 
-To better understand algorithm, we follow the example from the original paper. We consider a true potential energy function $U(\theta)$
+

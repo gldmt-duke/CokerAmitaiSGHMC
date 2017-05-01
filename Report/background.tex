@@ -5,7 +5,7 @@ Because this is a project about Hamiltonian Monte Carlo, imagine a frictionless 
 	dr = -\Delta U(\theta)\,dt
 \end{gather*}
 
-where $M$ is a mass function easily set to the identity matrix, and $U$ is the potential energy function given my $-\sum_{x\in\mathcal{D}}\log p(x|\theta)-\log p(\theta)$.
+where $M$ is a mass function easily set to the identity matrix, and $U$ is the potential energy function given my $-\sum_{x\in\mathcal{D}}\log p(x|\theta)-\log p(\theta)$. To discretize time we implement the leapfrog method, which updates the momentum and position variables sequentially, first simulating the momentum variable over the interval $\frac{\epsilon}{2}$, then simulating the position variable over the entire learning rate $\epsilon$, and finally completing the simulation of the momentum variable over the time $\frac{\epsilon}{2}$.
 \\
 
 We can summarize the algorithm as follows:
@@ -30,7 +30,3 @@ We can summarize the algorithm as follows:
 
 
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{posterior_samples.pdf}
-\end{figure}
