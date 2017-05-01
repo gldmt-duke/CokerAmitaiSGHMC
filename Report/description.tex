@@ -12,7 +12,7 @@ Logistic regression assigns the probability of success to a dichotomous response
 
 where $\bm{x}_i$ is a vector of length $p$ covariates for data point $i$ and $\bm{\beta}$ is a vector of regression coefficients of length $p$. In a Bayesian framework, we would assign the a prior distribution on our unknown parameters $P(\bm{\beta})\sim\mathcal{N}(0, \sigma^2)$ where, for the purposes of our project, $\sigma^2$ is known. The corresponding posterior will be proportional to $P(\theta)\prod_{i=1}^n\prob{y_i|\bm{x}_i,\bm{\beta}}$, which would give us the potential energy function
 \begin{equation*}
-U(\bm{\beta})=-\log\left[P(\bm{\beta})\right] - \sum_{i=1}^n\log\left[\prob{y_i|\bm{x}_i,\bm{\beta}}\right]=\sum_{j=1}^p\frac{\beta_j^2}{2\sigma^2}-\sum_{i=1}^n\left[y_i(\bm{x}_i^T\bm{\beta}-\log(1+\exp\braces{\bm{x}_i^T\bm{\beta}})\right]
+U(\bm{\beta})=-\log\left[P(\bm{\beta})\right] - \sum_{i=1}^n\log\left[\prob{y_i|\bm{x}_i,\bm{\beta}}\right]=\sum_{j=1}^p\frac{\beta_j^2}{2\sigma^2}-\sum_{i=1}^n\left[y_i(\bm{x}_i^T\bm{\beta})-\log(1+\exp\braces{\bm{x}_i^T\bm{\beta}})\right]
 \end{equation*}
 and gradient components
 \begin{equation*}
@@ -25,9 +25,9 @@ In practice, the stochastic gradient is noisy since it is an approximation of th
 	\For{t=1, 2, \dots} {
 		Sample momentum $r^{(1)}\sim\mathcal{N}(0, M)$\\
 		\For{i=1,\dots,m} {
-			\theta_i=\theta_{i-1}+\epsilon M^{-1}r_{i-1}\\
-			r_i = r_{i-1} + \epsilon \Delta\tilde{U}(\theta_i)-\epsilon C M^{-1}r_{i-1}+\mathcal{N}(0, 2(C-\hat{B})\epsilon)\\
+			$\theta_i=\theta_{i-1}+\epsilon M^{-1}r_{i-1}$\\
+			$r_i = r_{i-1} + \epsilon \Delta\tilde{U}(\theta_i)-\epsilon C M^{-1}r_{i-1}+\mathcal{N}(0, 2(C-\hat{B})\epsilon)$\\
 		}
-		(\theta^{t+1}, r^{t+1})=(\theta_m, r_m)\\
+		$(\theta^{t+1}, r^{t+1})=(\theta_m, r_m)$\\
 	}
 \end{algorithm}
