@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.30)  1 MAY 2017 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.30)  1 MAY 2017 14:16
 entering extended mode
 **./SGHMC_Final_Report.tex
 (SGHMC_Final_Report.tex
@@ -347,73 +347,92 @@ Package pdftex.def Info: posterior_samples.pdf used on input line 27.
 [1
 
 {C:/Users/ga74/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
-(description.tex [2 <./posterior_samples.pdf>]) (optimization.tex)
-(simulated.tex
+(description.tex [2 <./posterior_samples.pdf>]) (optimization.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-[3] <hmc-energy-pima.pdf, id=65, 289.08pt x 216.81pt>
-File: hmc-energy-pima.pdf Graphic file (type pdf)
-
-<use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 9.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 14.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 25.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: hmc-energy-pima.pdf Graphic file (type pdf)
-
-<use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 30.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 39.
-(pdftex.def)             Requested size: 234.96793pt x 176.22385pt.
-) [4 <./hmc-energy-pima.pdf>] (real.tex
+[3]) (simulated.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-File: hmc-energy-pima.pdf Graphic file (type pdf)
-<use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 9.
+<hmc-energy-sim.pdf, id=65, 289.08pt x 216.81pt>
+File: hmc-energy-sim.pdf Graphic file (type pdf)
+ <use hmc-energy-sim.pdf>
+Package pdftex.def Info: hmc-energy-sim.pdf used on input line 9.
 (pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 14.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 25.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: hmc-energy-pima.pdf Graphic file (type pdf)
 
-<use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 30.
+<hmc-trace-pima.pdf, id=66, 462.52798pt x 346.89601pt>
+File: hmc-trace-pima.pdf Graphic file (type pdf)
+
+<use hmc-trace-pima.pdf>
+Package pdftex.def Info: hmc-trace-pima.pdf used on input line 13.
+(pdftex.def)             Requested size: 211.4697pt x 158.60544pt.
+ <sghmc-energy-sim.pdf, id=67, 289.08pt x 216.81pt>
+File: sghmc-energy-sim.pdf Graphic file (type pdf)
+
+<use sghmc-energy-sim.pdf>
+Package pdftex.def Info: sghmc-energy-sim.pdf used on input line 23.
 (pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
- [5]
+File: sghmc-energy-sim.pdf Graphic file (type pdf)
+ <use sghmc-energy-sim.pdf>
+Package pdftex.def Info: sghmc-energy-sim.pdf used on input line 28.
+(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
+ [4 <./hmc-energy-sim.pdf> <./hmc-trace-pima.pdf
+
+pdfTeX warning: pdflatex.exe (file ./hmc-trace-pima.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]) (real.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+<hmc-energy-pima.pdf, id=117, 289.08pt x 216.81pt>
 File: hmc-energy-pima.pdf Graphic file (type pdf)
  <use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 40.
+Package pdftex.def Info: hmc-energy-pima.pdf used on input line 11.
+(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
+File: hmc-trace-pima.pdf Graphic file (type pdf)
+
+<use hmc-trace-pima.pdf>
+Package pdftex.def Info: hmc-trace-pima.pdf used on input line 16.
+(pdftex.def)             Requested size: 211.4697pt x 158.60544pt.
+ <sghmc-energy-pima.pdf, id=118, 433.62pt x 722.7pt>
+File: sghmc-energy-pima.pdf Graphic file (type pdf)
+
+<use sghmc-energy-pima.pdf>
+Package pdftex.def Info: sghmc-energy-pima.pdf used on input line 27.
+(pdftex.def)             Requested size: 211.4697pt x 352.44992pt.
+ <sghmc-trace-pima.pdf, id=119, 433.62pt x 722.7pt>
+File: sghmc-trace-pima.pdf Graphic file (type pdf)
+
+<use sghmc-trace-pima.pdf>
+Package pdftex.def Info: sghmc-trace-pima.pdf used on input line 32.
+(pdftex.def)             Requested size: 211.4697pt x 352.44992pt.
+ [5 <./sghmc-energy-sim.pdf> <./hmc-energy-pima.pdf
+
+pdfTeX warning: pdflatex.exe (file ./hmc-energy-pima.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+File: hmc-energy-pima.pdf Graphic file (type pdf)
+ <use hmc-energy-pima.pdf>
+Package pdftex.def Info: hmc-energy-pima.pdf used on input line 42.
 (pdftex.def)             Requested size: 234.96793pt x 176.22385pt.
-) (discussion.tex)
-[6] (SGHMC_Final_Report.aux) )
+) (discussion.tex) [6 <./sghmc-energy-pima.pdf> <./sghmc-trace-pima.pdf
+
+pdfTeX warning: pdflatex.exe (file ./sghmc-trace-pima.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>] [7] (SGHMC_Final_Report.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4012 strings out of 493334
- 55929 string characters out of 3139231
+ 4037 strings out of 493334
+ 56509 string characters out of 3139231
  138625 words of memory out of 3000000
- 7455 multiletter control sequences out of 15000+200000
+ 7475 multiletter control sequences out of 15000+200000
  18581 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,15n,30p,1059b,1943s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -430,9 +449,9 @@ nts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on SGHMC_Final_Report.pdf (6 pages, 253410 bytes).
+Output written on SGHMC_Final_Report.pdf (7 pages, 396706 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
+ 313 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,7 @@
 We used the Pima Indians Diabetes Dataset from the National Institute of Diabetes and Digestive and Kidney Diseases. This dataset has a binary response variable indicating if the sample has diabetes and eight covariates on 768 samples. The data was standardized to have mean zero and standard deviation one.\\
 
+
+
 We can see that using the Hamiltonian Monte Carlo algorithm produced good mixing with energy decreasing downwards and converging:
 
 \begin{figure}[H]
@@ -11,8 +13,7 @@ We can see that using the Hamiltonian Monte Carlo algorithm produced good mixing
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 		\centering
-		\includegraphics[width=0.9\textwidth]{hmc-energy-pima.pdf} % second figure itself
-		\caption{second figure}
+		\includegraphics[width=0.9\textwidth]{hmc-trace-pima.pdf} % second figure itself
 	\end{minipage}
 \end{figure}
 
@@ -22,13 +23,12 @@ We can see that using the Stochastic Gradient Hamiltonian Monte Carlo algorithm 
 	\centering
 	\begin{minipage}{0.45\textwidth}
 		\centering
-		\includegraphics[width=0.9\textwidth]{hmc-energy-pima.pdf} % first figure itself
+		\includegraphics[width=0.9\textwidth]{sghmc-energy-pima.pdf} % first figure itself
 		\caption{first figure}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 		\centering
-		\includegraphics[width=0.9\textwidth]{hmc-energy-pima.pdf} % second figure itself
-		\caption{second figure}
+		\includegraphics[width=0.9\textwidth]{sghmc-trace-pima.pdf} % second figure itself
 	\end{minipage}
 \end{figure}
 
