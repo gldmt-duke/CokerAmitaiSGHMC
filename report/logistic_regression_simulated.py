@@ -171,28 +171,23 @@ plt.savefig('sghmc-energy-sim.pdf')
 
 # ### Gradient Descent
 
-# In[8]:
-
 # Gradient descent - Scaled
 np.random.seed(2)
 phi = .1
 
-res = sghmc.gd(Y, Xs, sghmc.gradU_logistic, .1, 10000, np.zeros(p), phi)
+beta_est_gd = sghmc.gd(Y, Xs, sghmc.gradU_logistic, .1, 10000, np.zeros(p), phi)
 
-res - beta_true_scale
-
-
-# In[ ]:
+beta_est_gd - beta_true_scale
 
 
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
+df = pd.DataFrame(np.vstack((beta_true_scale, 
+                  beta_est_hmc, 
+                  beta_est_sghmc, 
+                  beta_est_gd)).T,
+                  columns=['MLE','HMC','SGHMC','GD'])
+df.plot()
+ax.set_title("Coefficient Estimates")
+ax.set_xlabel("Coefficient")
+plt.savefig('coefs-sim.pdf')
 
 

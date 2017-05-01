@@ -172,6 +172,7 @@ M = np.identity(p)
 
 samples, H = sghmc.run_sghmc(Y, Xs, sghmc.U_logistic, sghmc.stogradU_logistic, M, eps, m, theta, C, V, phi, nsample, nbatch)
 
+beta_est_sghmc = np.mean(samples, axis=0)
 np.mean(samples, axis=0) - beta_true_scale
 
 
@@ -222,7 +223,21 @@ plt.savefig('sghmc-energy-pima.pdf')
 #res - beta_true_scale
 #
 #
+# Gradient descent - Scaled
+np.random.seed(2)
+phi = .1
+
+beta_est_gd = sghmc.gd(Y, Xs, sghmc.gradU_logistic, .1, 10000, np.zeros(p), phi)
+
+beta_est_gd - beta_true_scale
 
 
-
-
+df = pd.DataFrame(np.vstack((beta_true_scale, 
+                  beta_est_hmc, 
+                  beta_est_sghmc, 
+                  beta_est_gd)).T,
+                  columns=['MLE','HMC','SGHMC','GD'])
+df.plot()
+ax.set_title("Coefficient Estimates")
+ax.set_xlabel("Coefficient")
+plt.savefig('coefs-pima.pdf')

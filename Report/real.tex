@@ -1,7 +1,5 @@
 We used the Pima Indians Diabetes Dataset from the National Institute of Diabetes and Digestive and Kidney Diseases. This dataset has a binary response variable indicating if the sample has diabetes and eight covariates on 768 samples. The data was standardized to have mean zero and standard deviation one.\\
 
-
-
 We can see that using the Hamiltonian Monte Carlo algorithm produced good mixing with energy decreasing downwards and converging:
 
 \begin{figure}[H]
@@ -37,6 +35,7 @@ We compared the coefficients produced by each algorithm to the MLE estimates to 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.45\textwidth]{hmc-energy-pima.pdf}
+	\includegraphics[width=0.45\textwidth]{coefs-pima.pdf}
 \end{figure}
 
+We see that all coefficients are fairly similar.

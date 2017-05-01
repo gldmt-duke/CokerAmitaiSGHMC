@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.30)  1 MAY 2017 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2017.4.30)  1 MAY 2017 14:18
 entering extended mode
 **./SGHMC_Final_Report.tex
 (SGHMC_Final_Report.tex
@@ -357,83 +357,167 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-<hmc-energy-sim.pdf, id=65, 289.08pt x 216.81pt>
-File: hmc-energy-sim.pdf Graphic file (type pdf)
- <use hmc-energy-sim.pdf>
-Package pdftex.def Info: hmc-energy-sim.pdf used on input line 9.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
 
-<hmc-trace-pima.pdf, id=66, 462.52798pt x 346.89601pt>
-File: hmc-trace-pima.pdf Graphic file (type pdf)
+LaTeX Warning: File `hmc-energy-sim.pdf' not found on input line 9.
 
-<use hmc-trace-pima.pdf>
-Package pdftex.def Info: hmc-trace-pima.pdf used on input line 13.
-(pdftex.def)             Requested size: 211.4697pt x 158.60544pt.
- <sghmc-energy-sim.pdf, id=67, 289.08pt x 216.81pt>
-File: sghmc-energy-sim.pdf Graphic file (type pdf)
 
-<use sghmc-energy-sim.pdf>
-Package pdftex.def Info: sghmc-energy-sim.pdf used on input line 23.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: sghmc-energy-sim.pdf Graphic file (type pdf)
- <use sghmc-energy-sim.pdf>
-Package pdftex.def Info: sghmc-energy-sim.pdf used on input line 28.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
- [4 <./hmc-energy-sim.pdf> <./hmc-trace-pima.pdf
+! Package pdftex.def Error: File `hmc-energy-sim.pdf' not found.
 
-pdfTeX warning: pdflatex.exe (file ./hmc-trace-pima.pdf): PDF inclusion: multip
-le pdfs with page group included in a single page
->]) (real.tex
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ...cs[width=0.9\textwidth]{hmc-energy-sim.pdf}
+                                                   % first figure
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `hmc-trace-pima.pdf' not found on input line 13.
+
+
+! Package pdftex.def Error: File `hmc-trace-pima.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...s[width=0.9\textwidth]{hmc-trace-pima.pdf}
+                                                   % second figure
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `sghmc-energy-sim.pdf' not found on input line 23.
+
+
+! Package pdftex.def Error: File `sghmc-energy-sim.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...width=0.9\textwidth]{sghmc-energy-sim.pdf}
+                                                   % first figure itself
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `sghmc-energy-sim.pdf' not found on input line 28.
+
+
+! Package pdftex.def Error: File `sghmc-energy-sim.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...width=0.9\textwidth]{sghmc-energy-sim.pdf}
+                                                   % second figure itself
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4]) (real.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-<hmc-energy-pima.pdf, id=117, 289.08pt x 216.81pt>
-File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 11.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: hmc-trace-pima.pdf Graphic file (type pdf)
 
-<use hmc-trace-pima.pdf>
-Package pdftex.def Info: hmc-trace-pima.pdf used on input line 16.
-(pdftex.def)             Requested size: 211.4697pt x 158.60544pt.
- <sghmc-energy-pima.pdf, id=118, 433.62pt x 722.7pt>
-File: sghmc-energy-pima.pdf Graphic file (type pdf)
+LaTeX Warning: File `hmc-energy-pima.pdf' not found on input line 11.
 
-<use sghmc-energy-pima.pdf>
-Package pdftex.def Info: sghmc-energy-pima.pdf used on input line 27.
-(pdftex.def)             Requested size: 211.4697pt x 352.44992pt.
- <sghmc-trace-pima.pdf, id=119, 433.62pt x 722.7pt>
-File: sghmc-trace-pima.pdf Graphic file (type pdf)
 
-<use sghmc-trace-pima.pdf>
-Package pdftex.def Info: sghmc-trace-pima.pdf used on input line 32.
-(pdftex.def)             Requested size: 211.4697pt x 352.44992pt.
- [5 <./sghmc-energy-sim.pdf> <./hmc-energy-pima.pdf
+! Package pdftex.def Error: File `hmc-energy-pima.pdf' not found.
 
-pdfTeX warning: pdflatex.exe (file ./hmc-energy-pima.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->]
-File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 42.
-(pdftex.def)             Requested size: 234.96793pt x 176.22385pt.
-) (discussion.tex) [6 <./sghmc-energy-pima.pdf> <./sghmc-trace-pima.pdf
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...[width=0.9\textwidth]{hmc-energy-pima.pdf}
+                                                   % first figure itself
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-pdfTeX warning: pdflatex.exe (file ./sghmc-trace-pima.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
->] [7] (SGHMC_Final_Report.aux) )
+
+LaTeX Warning: File `hmc-trace-pima.pdf' not found on input line 16.
+
+
+! Package pdftex.def Error: File `hmc-trace-pima.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...s[width=0.9\textwidth]{hmc-trace-pima.pdf}
+                                                   % second figure itself
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[5]
+
+LaTeX Warning: File `sghmc-energy-pima.pdf' not found on input line 26.
+
+
+! Package pdftex.def Error: File `sghmc-energy-pima.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...idth=0.9\textwidth]{sghmc-energy-pima.pdf}
+                                                   % first figure itself
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `sghmc-trace-pima.pdf' not found on input line 31.
+
+
+! Package pdftex.def Error: File `sghmc-trace-pima.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ...width=0.9\textwidth]{sghmc-trace-pima.pdf}
+                                                   % second figure itself
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `hmc-energy-pima.pdf' not found on input line 40.
+
+
+! Package pdftex.def Error: File `hmc-energy-pima.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...width=0.45\textwidth]{hmc-energy-pima.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[6]) (discussion.tex) [7] (SGHMC_Final_Report.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4037 strings out of 493334
- 56509 string characters out of 3139231
+ 4015 strings out of 493334
+ 55928 string characters out of 3139231
  138625 words of memory out of 3000000
- 7475 multiletter control sequences out of 15000+200000
- 18581 words of font info for 68 fonts, out of 3000000 for 9000
+ 7452 multiletter control sequences out of 15000+200000
+ 18750 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,15n,30p,1059b,1943s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
@@ -448,10 +532,11 @@ lic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on SGHMC_Final_Report.pdf (7 pages, 396706 bytes).
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on SGHMC_Final_Report.pdf (7 pages, 241313 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

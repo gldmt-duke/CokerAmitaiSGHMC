@@ -1,6 +1,14 @@
-Because this is a project about Hamiltonian Monte Carlo, imagine a frictionless puck on an icy surface of varying heights. The state of this puck is given by it's momentum $\bm{q}$ and position $\bm{p}$. The potential energy of the puck $U$ will be a function of only its height, while the kinetic energy will be a function of its momentum $K(q)=\frac{|\bm{q}|^2}{2m}$. If the ice is flat, the puck will move with a constant velocity. If the ice slopes upwards, the kinetic energy will decrease as the potential energy increases until it reaches zero, at which point it will slide back down. In the context of Bayesian statistics, we can think of the position of the puck as the posterior distribution we want to sample from, and the momentum variable are artificial constructs that allow us to efficiently move around our space. We use the notion of position and momentum, jointly called the Hamiltonian system, to propose samples where we set $U(p) = -\log[P(p)\mathcal{L}(p|\mathcal{D})]$\\
+Because this is a project about Hamiltonian Monte Carlo, imagine a frictionless puck on an icy surface of varying heights. The state of this puck is given by it's momentum $\bm{q}$ and position $\bm{p}$. The potential energy of the puck $U$ will be a function of only its height, while the kinetic energy will be a function of its momentum $K(q)=\frac{|\bm{q}|^2}{2m}$. If the ice is flat, the puck will move with a constant velocity. If the ice slopes upwards, the kinetic energy will decrease as the potential energy increases until it reaches zero, at which point it will slide back down. In the context of Bayesian statistics, we can think of the position of the puck as the posterior distribution we want to sample from, and the momentum variable are artificial constructs that allow us to efficiently move around our space. We propose samples from the Hamiltonian dynamics
 
-The final algorithm will be:
+\begin{gather*}
+	d\theta=M^{-1}r\,dt\\
+	dr = -\Delta U(\theta)\,dt
+\end{gather*}
+
+where $M$ is a mass function easily set to the identity matrix, and $U$ is the potential energy function given my $-\sum_{x\in\mathcal{D}}\log p(x|\theta)-\log p(\theta)$.
+\\
+
+We can summarize the algorithm as:
 
 \begin{algorithm}[H]
 	\KwIn{Starting position $\theta^{(1)}$ and step size $\epsilon$.}
