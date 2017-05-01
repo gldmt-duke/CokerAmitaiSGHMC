@@ -5,6 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{bm}
+\usepackage{algorithm2e}
 
 %opening
 \setlength{\parindent}{0pt}
@@ -21,7 +22,7 @@
 %\date{\today}
 \maketitle 
 %\thispagestyle{empty}
-\vspace{-0.5in}
+
 
 \begin{abstract}
 	Hamiltonian Monte Carlo (HMC) is a Markov chain Monte Carlo algorithm for drawing samples from a probability distribution where proposed values are computed using Hamiltonian dynamics to find values of high acceptance probabilities. They allow us to explore sample states more efficiently than random walk proposals, but are limited by the expensive computation of the gradient of the potential energy function. Chen, Fox, and Guestrin propose the method Stochastic Gradient Hamiltonian Monte Carlo (SGHMC), a HMC algorithm that uses a subset of the data to compute the gradient. The authors find that the stochastic gradient is noisy and correct this with a friction term.
@@ -50,5 +51,14 @@
 \section{Discussion and Conclusion}
 \input{discussion.tex}
 
+\section{Bibliography}
+\begin{thebibliography}{9}
+	\bibitem{latexcompanion} 
+	
+	\bibitem{einstein} 
+	
+	\bibitem{knuthwebsite} 
+
+\end{thebibliography}
 
 \end{document}
