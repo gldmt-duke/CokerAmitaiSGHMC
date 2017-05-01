@@ -106,7 +106,7 @@ beta_est_hmc - beta_true_scale
 
 # In[9]:
 
-plt.plot((samples - beta_true_scale)[:,1])
+plt.plot((samples - beta_true_scale)[:,0])
 plt.savefig('hmc-trace-sim.pdf')
 
 
@@ -151,20 +151,20 @@ C = 1 * np.identity(p)
 V = 0 * np.identity(p)
 M = np.identity(p)
 
-samples, H = sghmc.run_sghmc(Y, Xs, sghmc.U_logistic, sghmc.stogradU_logistic, M, eps, m, theta, C, V, phi, nsample, nbatch)
-beta_est_sghmc = np.mean(samples, axis=0)
-np.mean(samples, axis=0) - beta_true_scale
+samples_sghmc, H_sghmc = sghmc.run_sghmc(Y, Xs, sghmc.U_logistic, sghmc.stogradU_logistic, M, eps, m, theta, C, V, phi, nsample, nbatch)
+beta_est_sghmc = np.mean(samples_sghmc, axis=0)
+np.mean(samples_sghmc, axis=0) - beta_true_scale
 
 
 # In[12]:
 
-plt.plot((samples - beta_true_scale)[:,0])
+plt.plot((samples_sghmc - beta_true_scale)[:,0])
 plt.savefig('sghmc-trace-sim.pdf')
 
 
 # In[13]:
 
-plt.plot(H)
+plt.plot(H_sghmc)
 plt.savefig('sghmc-energy-sim.pdf')
 
 
