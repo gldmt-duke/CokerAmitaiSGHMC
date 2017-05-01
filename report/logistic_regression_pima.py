@@ -49,7 +49,7 @@ beta_true_scale
 
 
 # HMC - Scaled
-nsample = 1000
+nsample = 10000
 m = 20
 eps = .001
 theta = np.zeros(p)
@@ -83,7 +83,7 @@ plt.savefig('hmc-energy-pima.pdf')
 
 
 # HMC - Scaled (no intercept)
-nsample = 1000
+nsample = 10000
 m = 20
 eps = .002
 theta = np.zeros(p)
@@ -133,7 +133,7 @@ df = pd.DataFrame(np.vstack((beta_true_scale,
                   beta_est_gd)).T,
                   columns=['MLE','HMC','SGHMC','GD'])
 fig, ax = plt.subplots(figsize=(4,3))
-plt.plot(df)
+df.plot(ax=ax, fig=fig)
 ax.set_title("Coefficient Estimates")
 ax.set_xlabel("Coefficient")
 plt.tight_layout()

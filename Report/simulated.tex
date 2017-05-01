@@ -2,9 +2,7 @@ To test our implementation of the algorithm, we simulated data with 50 covariate
 
 In general, we find that the algorithm requires careful attention to the step rate $\eta$, the number of time steps $m$, and the size of the minibatch for the stochastic gradient. While these parameters don't need to be calibrated precisely, they need to be on the right order of magnitude or the algorithm will not converge or mix poorly.
 
-For the simulated data, we chose ... [mention parameters]
-
-We can see that using the Hamiltonian Monte Carlo algorithm produced good mixing with energy decreasing downwards and converging:
+We can see that using the Hamiltonian Monte Carlo algorithm produced suboptimal mixing:
 
 \begin{figure}[H]
 	\centering
@@ -18,7 +16,7 @@ We can see that using the Hamiltonian Monte Carlo algorithm produced good mixing
 	\end{minipage}
 \end{figure}
 
-We can see that using the Stochastic Gradient Hamiltonian Monte Carlo algorithm produced good mixing with energy decreasing downwards and converging:
+We can see that using the Stochastic Gradient Hamiltonian Monte Carlo algorithm produced good mixing:
 
 \begin{figure}[H]
 	\centering
@@ -39,4 +37,4 @@ We compared the coefficients produced by each algorithm to the MLE estimates to 
 	\includegraphics[width=0.45\textwidth]{coefs-sim.pdf}
 \end{figure}
 
-We see that all coefficients are fairly similar and that the SGHMC is more accurate to the GD and MLE estimates than the HMC.
+We see that all coefficients are fairly similar and that the SGHMC is closer to the GD and MLE estimates than the HMC estimates.

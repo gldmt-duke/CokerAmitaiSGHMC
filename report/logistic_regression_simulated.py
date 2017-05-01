@@ -63,7 +63,7 @@ beta_true_scale
 
 
 # HMC - Scaled
-nsample = 1000
+nsample = 10000
 m = 20
 eps = .001
 theta = np.zeros(p)
@@ -103,7 +103,7 @@ plt.savefig('hmc-energy-sim.pdf')
 
 
 # HMC - Scaled (no intercept)
-nsample = 1000
+nsample = 10000
 m = 20
 eps = .002
 theta = np.zeros(p)
@@ -163,5 +163,6 @@ ax.set_xlabel("Coefficient")
 plt.tight_layout()
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.savefig('coefs-sim.pdf')
+
 
 
