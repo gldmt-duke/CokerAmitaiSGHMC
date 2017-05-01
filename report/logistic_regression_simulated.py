@@ -79,6 +79,7 @@ beta_est_hmc - beta_true_scale
 
 
 plt.plot((samples - beta_true_scale)[:,0])
+plt.tight_layout()
 plt.savefig('hmc-trace-sim.pdf')
 
 
@@ -86,6 +87,7 @@ fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(H)
 ax.set_title("Total energy")
 ax.set_xlabel("Number of samples")
+plt.tight_layout()
 plt.savefig('hmc-energy-sim.pdf')
 
 
@@ -117,11 +119,13 @@ np.mean(samples_sghmc, axis=0) - beta_true_scale
 
 
 plt.plot((samples_sghmc - beta_true_scale)[:,0])
+plt.tight_layout()
 plt.savefig('sghmc-trace-sim.pdf')
 
 
 
 plt.plot(H_sghmc)
+plt.tight_layout()
 plt.savefig('sghmc-energy-sim.pdf')
 
 
@@ -146,6 +150,7 @@ df = pd.DataFrame(np.vstack((beta_true_scale,
 df.plot()
 ax.set_title("Coefficient Estimates")
 ax.set_xlabel("Coefficient")
+plt.tight_layout()
 plt.savefig('coefs-sim.pdf')
 
 

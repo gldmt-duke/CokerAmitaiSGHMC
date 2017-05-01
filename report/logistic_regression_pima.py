@@ -66,12 +66,14 @@ fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(samples[:,0])
 ax.set_title("Trace of First Coefficient")
 ax.set_xlabel("Index of Samples")
+plt.tight_layout()
 plt.savefig('hmc-trace-pima.pdf')
 
 fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(H)
 ax.set_title("Total energy")
 ax.set_xlabel("Index of Samples")
+plt.tight_layout()
 plt.savefig('hmc-energy-pima.pdf')
 
 
@@ -103,6 +105,7 @@ fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(samples[:,0])
 ax.set_title("Trace of First Coefficient")
 ax.set_xlabel("Index of Samples")
+plt.tight_layout()
 plt.savefig('sghmc-trace-pima.pdf')
 
 
@@ -111,6 +114,7 @@ fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(H)
 ax.set_title("Total energy")
 ax.set_xlabel("Index of Samples")
+plt.tight_layout()
 plt.savefig('sghmc-energy-pima.pdf')
 
 
@@ -131,4 +135,5 @@ df = pd.DataFrame(np.vstack((beta_true_scale,
 df.plot()
 ax.set_title("Coefficient Estimates")
 ax.set_xlabel("Coefficient")
+plt.tight_layout()
 plt.savefig('coefs-pima.pdf')
