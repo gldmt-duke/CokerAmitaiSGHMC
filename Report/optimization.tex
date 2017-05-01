@@ -2,12 +2,15 @@ Any MCMC algorithm is inherently sequential, and so can't be parallelized (thoug
 
 We feel this is a nice Both libraries are written with the same input syntax and function names, so they can be easily exchanged. A small difference is that the potential energy function and gradient function cannot be supplied by the user in the C++ implementation.\\
 
-Note that one drawback to a C++ implementation is the limited availability of easy-to-use random sampling functions. To complete our algorithm, we wrote a random multivariate normal function based on a Cholesky decomposition (necessary for the momentum updates and noise terms) and a random sampling function (necessary for the stochastic gradient descent). Unfortunately, the random sampling function is quite slow, significantly dampening the impact from the low-level speedup.
+Note that one drawback to a C++ implementation is the limited availability of easy-to-use random sampling functions. To complete our algorithm, we wrote a random multivariate normal function based on a Cholesky decomposition (necessary for the momentum updates and noise terms) and a random sampling function (necessary for the stochastic gradient descent). Unfortunately, the random sampling function is quite slow, dampening the impact from the low-level speedup.
 
-To compare the performance of our two implementations, we make use of the {\tt %timeit} magic function. Unfortunately, while the {\tt %prun} profiler provides useful information on the Python implementation, it does not work on the Pybind11 implementation.
+To compare the performance of our two implementations, we use the Pima Indian data again and make use of the {\tt %timeit} magic function. Unfortunately, while the {\tt %prun} profiler provides useful information on the Python implementation, it does not work on the C++ implementation.
 	
-Starting with the stochastic gradient function, we see that...
+Starting with the stochastic gradient function, on 1000 loops we find that the Python implementation has a best of 10 of $97.9 \mu s$ per loop while the C++ version has a best of 10 of $45.6 \mu s$ per loop. This is less than the speedup we would usually expect from a compiled language. The reason has to do with the innefficient random sampling procedure used in our C++ code. This could certainly be improved.
 
-Next, we see that the {\tt run_sghmc} function
+Using 10 loops and looking at the best of 3 this time, we find that the Python implementation of the sghmc function takes about $5.12 s$ per loop, while the C++ version takes about $663 ms$. In both cases, we used a batch size of 100, a number of time steps of 20. Here we can see the dramatic improvements of the lower level implementation.
 
-As discussed, {\tt %prun} will not work for the Pybind11 version, so we can only examine the results for the unoptimized Python version.
+As discussed, {\tt %prun} will not work for the C++ version, so we can only examine the results for the unoptimized Python version. We find that function spends 0.929 seconds of its total time (out of 5.865 seconds) in the multivariate normal function. The stochastic gradient is close behind at 0.801. The logistic shows up with a total time of 0.280.
+
+Further of the comparison and the {\tt %prun} results are available in a Ipython notebook on the provided Github repository.
+
