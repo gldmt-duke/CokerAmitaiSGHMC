@@ -132,8 +132,10 @@ df = pd.DataFrame(np.vstack((beta_true_scale,
                   beta_est_sghmc, 
                   beta_est_gd)).T,
                   columns=['MLE','HMC','SGHMC','GD'])
-df.plot()
+fig, ax = plt.subplots(figsize=(4,3))
+plt.plot(df)
 ax.set_title("Coefficient Estimates")
 ax.set_xlabel("Coefficient")
 plt.tight_layout()
+plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.savefig('coefs-pima.pdf')

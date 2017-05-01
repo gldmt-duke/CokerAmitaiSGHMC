@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 MAY 2017 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 MAY 2017 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -360,81 +360,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-<hmc-energy-sim.pdf, id=68, 289.08pt x 216.81pt>
+<hmc-energy-sim.pdf, id=67, 289.08pt x 216.81pt>
 File: hmc-energy-sim.pdf Graphic file (type pdf)
  <use hmc-energy-sim.pdf>
 Package pdftex.def Info: hmc-energy-sim.pdf used on input line 9.
 (pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
 
-<hmc-trace-pima.pdf, id=69, 289.08pt x 216.81pt>
+<hmc-trace-sim.pdf, id=68, 289.08pt x 216.81pt>
+File: hmc-trace-sim.pdf Graphic file (type pdf)
+ <use hmc-trace-sim.pdf>
+Package pdftex.def Info: hmc-trace-sim.pdf used on input line 13.
+(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
+
+<sghmc-energy-sim.pdf, id=69, 289.08pt x 216.81pt>
+File: sghmc-energy-sim.pdf Graphic file (type pdf)
+ <use sghmc-energy-sim.pdf>
+Package pdftex.def Info: sghmc-energy-sim.pdf used on input line 23.
+(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
+
+<sghmc-trace-sim.pdf, id=70, 289.08pt x 216.81pt>
+File: sghmc-trace-sim.pdf Graphic file (type pdf)
+ <use sghmc-trace-sim.pdf>
+Package pdftex.def Info: sghmc-trace-sim.pdf used on input line 27.
+(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
+
+<coefs-sim.pdf, id=71, 289.08pt x 216.81pt>
+File: coefs-sim.pdf Graphic file (type pdf)
+ <use coefs-sim.pdf>
+Package pdftex.def Info: coefs-sim.pdf used on input line 35.
+(pdftex.def)             Requested size: 234.96793pt x 176.22385pt.
+ [4 <./hmc-energy-sim.pdf> <./hmc-trace-sim.pdf
+
+pdfTeX warning: pdflatex (file ./hmc-trace-sim.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+> <./sghmc-energy-sim.pdf
+
+pdfTeX warning: pdflatex (file ./sghmc-energy-sim.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./sghmc-trace-sim.pdf
+
+pdfTeX warning: pdflatex (file ./sghmc-trace-sim.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]) (./real.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+<hmc-energy-pima.pdf, id=205, 289.08pt x 216.81pt>
+File: hmc-energy-pima.pdf Graphic file (type pdf)
+ <use hmc-energy-pima.pdf>
+Package pdftex.def Info: hmc-energy-pima.pdf used on input line 9.
+(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
+
+<hmc-trace-pima.pdf, id=206, 289.08pt x 216.81pt>
 File: hmc-trace-pima.pdf Graphic file (type pdf)
  <use hmc-trace-pima.pdf>
 Package pdftex.def Info: hmc-trace-pima.pdf used on input line 13.
 (pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
 
-<sghmc-energy-sim.pdf, id=70, 289.08pt x 216.81pt>
-File: sghmc-energy-sim.pdf Graphic file (type pdf)
- <use sghmc-energy-sim.pdf>
-Package pdftex.def Info: sghmc-energy-sim.pdf used on input line 23.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: sghmc-energy-sim.pdf Graphic file (type pdf)
+<sghmc-energy-pima.pdf, id=207, 289.08pt x 216.81pt>
+File: sghmc-energy-pima.pdf Graphic file (type pdf)
 
-<use sghmc-energy-sim.pdf>
-Package pdftex.def Info: sghmc-energy-sim.pdf used on input line 28.
+<use sghmc-energy-pima.pdf>
+Package pdftex.def Info: sghmc-energy-pima.pdf used on input line 23.
 (pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
- [4 <./hmc-energy-sim.pdf> <./hmc-trace-pima.pdf
+
+<sghmc-trace-pima.pdf, id=208, 289.08pt x 216.81pt>
+File: sghmc-trace-pima.pdf Graphic file (type pdf)
+ <use sghmc-trace-pima.pdf>
+Package pdftex.def Info: sghmc-trace-pima.pdf used on input line 27.
+(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
+
+[5 <./coefs-sim.pdf> <./hmc-energy-pima.pdf
+
+pdfTeX warning: pdflatex (file ./hmc-energy-pima.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+> <./hmc-trace-pima.pdf
 
 pdfTeX warning: pdflatex (file ./hmc-trace-pima.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
->] <coefs-sim.pdf, id=142, 462.52798pt x 346.89601pt>
-File: coefs-sim.pdf Graphic file (type pdf)
- <use coefs-sim.pdf>
-Package pdftex.def Info: coefs-sim.pdf used on input line 37.
-(pdftex.def)             Requested size: 234.96793pt x 176.2265pt.
+>] <coefs-pima.pdf, id=305, 289.08pt x 216.81pt>
+File: coefs-pima.pdf Graphic file (type pdf)
+ <use coefs-pima.pdf>
+Package pdftex.def Info: coefs-pima.pdf used on input line 36.
+(pdftex.def)             Requested size: 234.96793pt x 176.22385pt.
 )
-(./real.tex
+(./discussion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-<hmc-energy-pima.pdf, id=143, 289.08pt x 216.81pt>
-File: hmc-energy-pima.pdf Graphic file (type pdf)
- <use hmc-energy-pima.pdf>
-Package pdftex.def Info: hmc-energy-pima.pdf used on input line 9.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-File: hmc-trace-pima.pdf Graphic file (type pdf)
-
-<use hmc-trace-pima.pdf>
-Package pdftex.def Info: hmc-trace-pima.pdf used on input line 14.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
- [5 <./sghmc-energy-sim.pdf> <./coefs-sim.pdf
-
-pdfTeX warning: pdflatex (file ./coefs-sim.pdf): PDF inclusion: multiple pdfs w
-ith page group included in a single page
->] <sghmc-energy-pima.pdf, id=200, 289.08pt x 216.81pt>
-File: sghmc-energy-pima.pdf Graphic file (type pdf)
-
-<use sghmc-energy-pima.pdf>
-Package pdftex.def Info: sghmc-energy-pima.pdf used on input line 24.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-
-<sghmc-trace-pima.pdf, id=201, 289.08pt x 216.81pt>
-File: sghmc-trace-pima.pdf Graphic file (type pdf)
- <use sghmc-trace-pima.pdf>
-Package pdftex.def Info: sghmc-trace-pima.pdf used on input line 29.
-(pdftex.def)             Requested size: 211.4697pt x 158.6008pt.
-
-<coefs-pima.pdf, id=202, 462.52798pt x 346.89601pt>
-File: coefs-pima.pdf Graphic file (type pdf)
- <use coefs-pima.pdf>
-Package pdftex.def Info: coefs-pima.pdf used on input line 38.
-(pdftex.def)             Requested size: 234.96793pt x 176.2265pt.
-)
-(./discussion.tex) [6 <./hmc-energy-pima.pdf> <./sghmc-energy-pima.pdf
-
-pdfTeX warning: pdflatex (file ./sghmc-energy-pima.pdf): PDF inclusion: multipl
-e pdfs with page group included in a single page
-> <./sghmc-trace-pima.pdf
+) [6 <./sghmc-energy-pima.pdf> <./sghmc-trace-pima.pdf
 
 pdfTeX warning: pdflatex (file ./sghmc-trace-pima.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -442,34 +458,34 @@ pdfTeX warning: pdflatex (file ./sghmc-trace-pima.pdf): PDF inclusion: multiple
 
 pdfTeX warning: pdflatex (file ./coefs-pima.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
->] [7] (./SGHMC_Final_Report.aux) ) 
+>] (./SGHMC_Final_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 4481 strings out of 493089
- 61582 string characters out of 6134842
+ 4489 strings out of 493089
+ 61779 string characters out of 6134842
  154110 words of memory out of 5000000
- 7873 multiletter control sequences out of 15000+600000
+ 7879 multiletter control sequences out of 15000+600000
  18581 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,15n,30p,942b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti12.pfb>
-Output written on SGHMC_Final_Report.pdf (7 pages, 350498 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti12.pfb>
+Output written on SGHMC_Final_Report.pdf (6 pages, 375131 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
+ 446 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
