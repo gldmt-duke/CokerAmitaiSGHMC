@@ -1,8 +1,4 @@
 
-# coding: utf-8
-
-# In[1]:
-
 import numpy as np
 import matplotlib.pyplot as plt
 import sghmc
@@ -35,24 +31,13 @@ p = Xs.shape[1]
 
 
 
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
 
 
 # ### Regression
 
-# In[4]:
 
 from sklearn.linear_model import LogisticRegression
 
-
-# In[5]:
 
 # Unscaled
 mod_logis = LogisticRegression(fit_intercept=False, C=1e50)
@@ -70,24 +55,12 @@ beta_true_scale = mod_logis.coef_.ravel()
 beta_true_scale
 
 
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
 
 
 
 
 # ### HMC
 
-# In[7]:
 
 # HMC - Scaled
 nsample = 1000
@@ -104,13 +77,10 @@ beta_est_hmc = np.mean(samples, axis=0)
 beta_est_hmc - beta_true_scale
 
 
-# In[9]:
 
 plt.plot((samples - beta_true_scale)[:,0])
 plt.savefig('hmc-trace-sim.pdf')
 
-
-# In[10]:
 
 fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(H)
@@ -122,22 +92,11 @@ plt.savefig('hmc-energy-sim.pdf')
 
 
 
-# In[ ]:
-
-#fig, ax = plt.subplots()
-
-#ax.bar()
-
-
-# In[ ]:
-
-
 
 
 # ### SGHMC
 
 
-# In[11]:
 
 # HMC - Scaled (no intercept)
 nsample = 1000
@@ -156,13 +115,11 @@ beta_est_sghmc = np.mean(samples_sghmc, axis=0)
 np.mean(samples_sghmc, axis=0) - beta_true_scale
 
 
-# In[12]:
 
 plt.plot((samples_sghmc - beta_true_scale)[:,0])
 plt.savefig('sghmc-trace-sim.pdf')
 
 
-# In[13]:
 
 plt.plot(H_sghmc)
 plt.savefig('sghmc-energy-sim.pdf')

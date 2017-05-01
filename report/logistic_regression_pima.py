@@ -1,14 +1,7 @@
 
-# coding: utf-8
-
-# In[1]:
-
 import numpy as np
 import matplotlib.pyplot as plt
 import sghmc
-
-
-# In[2]:
 
 pima = np.genfromtxt('pima-indians-diabetes.data', delimiter=',')
 names = ["Number of times pregnant",
@@ -21,9 +14,6 @@ names = ["Number of times pregnant",
          "Age (years)",
          "Class variable (0 or 1)"]
 
-
-# In[3]:
-
 # Load data
 X = np.concatenate((np.ones((pima.shape[0],1)),pima[:,0:8]), axis=1)
 Y = pima[:,8]
@@ -33,30 +23,12 @@ Xs = Xs[:,1:]
 
 n, p = Xs.shape
 
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
 # ### Regression
 
-# In[4]:
 
 from sklearn.linear_model import LogisticRegression
 
 
-# In[5]:
 
 # Unscaled
 mod_logis = LogisticRegression(fit_intercept=False, C=1e50)
@@ -65,8 +37,6 @@ beta_true_unscale = mod_logis.coef_.ravel()
 beta_true_unscale
 
 
-# In[6]:
-
 # Scaled
 mod_logis = LogisticRegression(fit_intercept=False, C=1e50)
 mod_logis.fit(Xs,Y)
@@ -74,24 +44,9 @@ beta_true_scale = mod_logis.coef_.ravel()
 beta_true_scale
 
 
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
 # ### HMC
 
-# In[7]:
+
 
 # HMC - Scaled
 nsample = 1000
@@ -107,17 +62,11 @@ samples, accept, rho, H = sghmc.run_hmc(Y, Xs, sghmc.U_logistic, sghmc.gradU_log
 beta_est_hmc = np.mean(samples, axis=0)
 beta_est_hmc - beta_true_scale
 
-
-# In[9]:
-
 fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(samples[:,0])
 ax.set_title("Trace of First Coefficient")
 ax.set_xlabel("Index of Samples")
 plt.savefig('hmc-trace-pima.pdf')
-
-
-# In[10]:
 
 fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(H)
@@ -126,37 +75,10 @@ ax.set_xlabel("Index of Samples")
 plt.savefig('hmc-energy-pima.pdf')
 
 
-# In[11]:
-
-##fig, ax = plt.subplots(3,1, figsize=(6,10))
-#
-#i = 0
-#ax[0].plot((samples - beta_true_scale)[:,i])
-#ax[0].set_title(names[i])
-#
-#
-#i = 1
-#ax[1].plot((samples - beta_true_scale)[:,i])
-#ax[1].set_title(names[i])
-
-#
-#i = 2
-#ax[2].plot((samples - beta_true_scale)[:,i])
-#ax[2].set_title(names[i])
-
-
-# In[ ]:
-
-
-# In[ ]:
-
-
-
 
 # ### SGHMC
 
 
-# In[11]:
 
 # HMC - Scaled (no intercept)
 nsample = 1000
@@ -176,8 +98,6 @@ beta_est_sghmc = np.mean(samples, axis=0)
 np.mean(samples, axis=0) - beta_true_scale
 
 
-# In[12]:
-
 
 fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(samples[:,0])
@@ -186,7 +106,6 @@ ax.set_xlabel("Index of Samples")
 plt.savefig('sghmc-trace-pima.pdf')
 
 
-# In[13]:
 
 fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(H)
@@ -195,35 +114,6 @@ ax.set_xlabel("Index of Samples")
 plt.savefig('sghmc-energy-pima.pdf')
 
 
-# In[28]:
-
-#fig, ax = plt.subplots(3,1, figsize=(6,10))
-#
-#i = 0
-#ax[0].plot((samples - beta_true_scale)[:,i])
-#ax[0].set_title(names[i])
-#
-#
-#i = 1
-#ax[1].plot((samples - beta_true_scale)[:,i])
-#ax[1].set_title(names[i])
-#
-#
-#i = 2
-#ax[2].plot((samples - beta_true_scale)[:,i])
-#ax[2].set_title(names[i])
-#
-#
-#
-#np.random.seed(2)
-#phi = .1
-#
-#res = sghmc.gd(Y, Xs, sghmc.gradU_logistic, .1, 10000, np.zeros(p), phi)
-#
-#res - beta_true_scale
-#
-#
-# Gradient descent - Scaled
 import pandas as pd
 np.random.seed(2)
 phi = .1
