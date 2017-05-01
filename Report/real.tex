@@ -1,6 +1,8 @@
 We used the Pima Indians Diabetes Dataset from the National Institute of Diabetes and Digestive and Kidney Diseases. This dataset has a binary response variable indicating if the sample has diabetes and eight covariates on 768 samples. The data was standardized to have mean zero and standard deviation one.\\
 
-We can see that using the Hamiltonian Monte Carlo algorithm produced good mixing with energy decreasing downwards and converging:
+As discussed above, the parameters need to be chosen with care or the algorithm will mix poorly. For this data, we choose parameters ...[parameters]
+
+We can see that using the Hamiltonian Monte Carlo algorithm produced good mixing with energy decreasing downwards and converging. This means the sampling algorithm is spending most of its time in states of higher posterior probability.
 
 \begin{figure}[H]
 	\centering
