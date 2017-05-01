@@ -110,7 +110,10 @@ beta_est_hmc - beta_true_scale
 
 # In[9]:
 
-plt.plot((samples - beta_true_scale)[:,1])
+fig, ax = plt.subplots(figsize=(4,3))
+ax.plot(samples[:,0])
+ax.set_title("Trace of First Coefficient")
+ax.set_xlabel("Index of Samples")
 plt.savefig('hmc-trace-pima.pdf')
 
 
@@ -119,27 +122,27 @@ plt.savefig('hmc-trace-pima.pdf')
 fig, ax = plt.subplots(figsize=(4,3))
 ax.plot(H)
 ax.set_title("Total energy")
-ax.set_xlabel("Number of samples")
+ax.set_xlabel("Index of Samples")
 plt.savefig('hmc-energy-pima.pdf')
 
 
 # In[11]:
 
-fig, ax = plt.subplots(3,1, figsize=(6,10))
+##fig, ax = plt.subplots(3,1, figsize=(6,10))
+#
+#i = 0
+#ax[0].plot((samples - beta_true_scale)[:,i])
+#ax[0].set_title(names[i])
+#
+#
+#i = 1
+#ax[1].plot((samples - beta_true_scale)[:,i])
+#ax[1].set_title(names[i])
 
-i = 0
-ax[0].plot((samples - beta_true_scale)[:,i])
-ax[0].set_title(names[i])
-
-
-i = 1
-ax[1].plot((samples - beta_true_scale)[:,i])
-ax[1].set_title(names[i])
-
-
-i = 2
-ax[2].plot((samples - beta_true_scale)[:,i])
-ax[2].set_title(names[i])
+#
+#i = 2
+#ax[2].plot((samples - beta_true_scale)[:,i])
+#ax[2].set_title(names[i])
 
 
 # In[ ]:
@@ -174,44 +177,51 @@ np.mean(samples, axis=0) - beta_true_scale
 
 # In[12]:
 
-plt.plot((samples - beta_true_scale)[:,0])
+
+fig, ax = plt.subplots(figsize=(4,3))
+ax.plot(samples[:,0])
+ax.set_title("Trace of First Coefficient")
+ax.set_xlabel("Index of Samples")
 plt.savefig('sghmc-trace-pima.pdf')
 
 
 # In[13]:
 
-plt.plot(H)
+fig, ax = plt.subplots(figsize=(4,3))
+ax.plot(H)
+ax.set_title("Total energy")
+ax.set_xlabel("Index of Samples")
 plt.savefig('sghmc-energy-pima.pdf')
 
 
 # In[28]:
 
-fig, ax = plt.subplots(3,1, figsize=(6,10))
-
-i = 0
-ax[0].plot((samples - beta_true_scale)[:,i])
-ax[0].set_title(names[i])
-
-
-i = 1
-ax[1].plot((samples - beta_true_scale)[:,i])
-ax[1].set_title(names[i])
-
-
-i = 2
-ax[2].plot((samples - beta_true_scale)[:,i])
-ax[2].set_title(names[i])
-
-
-
-np.random.seed(2)
-phi = .1
-
-res = sghmc.gd(Y, Xs, sghmc.gradU_logistic, .1, 10000, np.zeros(p), phi)
-
-res - beta_true_scale
-
-
+#fig, ax = plt.subplots(3,1, figsize=(6,10))
+#
+#i = 0
+#ax[0].plot((samples - beta_true_scale)[:,i])
+#ax[0].set_title(names[i])
+#
+#
+#i = 1
+#ax[1].plot((samples - beta_true_scale)[:,i])
+#ax[1].set_title(names[i])
+#
+#
+#i = 2
+#ax[2].plot((samples - beta_true_scale)[:,i])
+#ax[2].set_title(names[i])
+#
+#
+#
+#np.random.seed(2)
+#phi = .1
+#
+#res = sghmc.gd(Y, Xs, sghmc.gradU_logistic, .1, 10000, np.zeros(p), phi)
+#
+#res - beta_true_scale
+#
+#
 
 
 
