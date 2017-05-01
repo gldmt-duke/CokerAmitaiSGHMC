@@ -1,4 +1,4 @@
-Stochastic Gradient Hamiltonian Monte Carlo proposes using a subset $\tilde{\mathcal{D}}$ of the entire dataset $\mathcal{D}$ to compute the stochastic gradient
+In their \textit{Stochastic Gradient Hamiltonian Monte Carlo}, Chen, Fox, and Guestrin propose using a subset $\tilde{\mathcal{D}}$ of the entire dataset $\mathcal{D}$ to compute
 \begin{equation*}
 	\Delta\tilde{U}(\theta)=-\frac{|\mathcal{D}|}{|\tilde{\mathcal{D}}|}\sum_{x\in\tilde{\mathcal{D}}}\Delta\log p(x|\theta) - \Delta\log p(\theta)
 \end{equation*}
@@ -16,14 +16,18 @@ U(\bm{\beta})=-\log\left[P(\bm{\beta})\right] - \sum_{i=1}^n\log\left[\prob{y_i|
 \end{equation*}
 and gradient components
 \begin{equation*}
-\frac{\partial U}{\partial \beta_j}=\frac{\beta_j}{\sigma^2}-\sum_{i=1}^{n}x_{ij}\left[y_i-\frac{\exp\braces{\bm{x}_i^T\bm{\beta}}}{1+\exp\braces{\bm{x}_i^T\bm{\beta}}}\right].
+\frac{\partial U}{\partial \beta_j}=\frac{\beta_j}{\sigma^2}-\sum_{i=1}^{n}x_{ij}\left[y_i-\frac{\exp\braces{\bm{x}_i^T\bm{\beta}}}{1+\exp\braces{\bm{x}_i^T\bm{\beta}}}\right]. 
 \end{equation*}
-
-
+In practice, the stochastic gradient is noisy since it is an approximation of the gradient. The paper suggests introducing a friction term to the momentum to dampen the movement of the chain. The algorithm will take a user specified friction term $C$ that is element-wise bigger than the noise model $B$. The noise model is unknown but can be set to zero for simplicity. The final algorithm will be:
 
 \begin{algorithm}[H]
 	\KwIn{Starting position $\theta^{(1)}$ and step size $\epsilon$.}
-	\For{t=1, 2, \dots}
-		{Sample momentum $r^{(t)}\sim\mathcal{N}(0, M)$\;
-		 Set $\left(\theta_0,r_0\right)$}
+	\For{t=1, 2, \dots} {
+		Sample momentum $r^{(1)}\sim\mathcal{N}(0, M)$\\
+		\For{i=1,\dots,m} {
+			\theta_i=\theta_{i-1}+\epsilon M^{-1}r_{i-1}\\
+			r_i = r_{i-1} + \epsilon \Delta\tilde{U}(\theta_i)-\epsilon C M^{-1}r_{i-1}+\mathcal{N}(0, 2(C-\hat{B})\epsilon)\\
+		}
+		(\theta^{t+1}, r^{t+1})=(\theta_m, r_m)\\
+	}
 \end{algorithm}
