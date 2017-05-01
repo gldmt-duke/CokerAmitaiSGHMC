@@ -1,9 +1,4 @@
-Because this is a project about Hamiltonian Monte Carlo, imagine a frictionless puck on an icy surface of varying heights. The state of this puck is given by it's momentum $\bm{q}$ and position $\bm{p}$. The potential energy of the puck $U$ will be a function of only its height, while the kinetic energy will be a function of its momentum $K(q)=\frac{|\bm{q}|^2}{2m}$. If the ice is flat, the puck will move with a constant velocity. If the ice slopes upwards, the kinetic energy will decrease as the potential energy increases until it reaches zero, at which point it will slide back down. In the context of Bayesian statistics, we can think of the position as the posterior distribution we want to sample from, and the momentum variable are artificial constructs that allow us to efficiently move around our space. The Hamiltonian $H(q, p)$ will be the sum of the potential and kinetic energy, and its partial derivatives will determine how $q$ and $p$ change overt ime $t$
-\begin{equation*}
-	\begin{split}
-	\frac{d p_i}{d t}=\frac{\partial H}{\partial q_i}\\
-	\end{split}
-\end{equation*}
+Because this is a project about Hamiltonian Monte Carlo, imagine a frictionless puck on an icy surface of varying heights. The state of this puck is given by it's momentum $\bm{q}$ and position $\bm{p}$. The potential energy of the puck $U$ will be a function of only its height, while the kinetic energy will be a function of its momentum $K(q)=\frac{|\bm{q}|^2}{2m}$. If the ice is flat, the puck will move with a constant velocity. If the ice slopes upwards, the kinetic energy will decrease as the potential energy increases until it reaches zero, at which point it will slide back down. In the context of Bayesian statistics, we can think of the position of the puck as the posterior distribution we want to sample from, and the momentum variable are artificial constructs that allow us to efficiently move around our space. We use the notion of position and momentum, jointly called the Hamiltonian system, to propose samples where we set $U(p) = -\log[P(p)\mathcal{L}(p|\mathcal{D})]$\\
 
 The final algorithm will be:
 
@@ -23,3 +18,8 @@ The final algorithm will be:
 		\If{$u < \min(1, \rho)$}{$\theta^{(t+1)} = \hat{\theta}$}
 	}
 \end{algorithm}
+
+
+
+
+\includegraphics[width=\textwidth]{posterior_samples.pdf}
