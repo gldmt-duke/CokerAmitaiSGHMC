@@ -207,11 +207,7 @@ ax[2].plot((samples - beta_true_scale)[:,i])
 ax[2].set_title(names[i])
 
 
-# ### Gradient Descent
 
-# In[8]:
-
-# Gradient descent - Scaled
 np.random.seed(2)
 phi = .1
 
@@ -220,17 +216,7 @@ res = sghmc.gd(Y, Xs, sghmc.gradU_logistic, .1, 10000, np.zeros(p), phi)
 res - beta_true_scale
 
 
-# In[ ]:
 
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
 
 
 

@@ -6,7 +6,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import sghmc
-
+import timeit
 
 # Create data
 
